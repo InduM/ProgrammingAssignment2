@@ -13,9 +13,9 @@ makeCacheMatrix <- function(x = matrix())
         IM <- NULL						#variable 'IM' is for the inverted matrix
 								#IM is NULL when makeCacheMatrix is called for the first time
       
-	set <- function(y)					# function is called in cacheSolve() 
+	set <- function(y)					# function takes the input matrix
 	{
-                x <<- y						#saves the input matrix passed from cacheSolve()
+                x <<- y						#saves the input matrix 
                 IM <<- NULL					#initializes the inverse matrix to NULL
         }
        
